@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="videoplayer.FXMLDocumentController">
+   <center>
+      <StackPane prefHeight="476.0" prefWidth="681.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaview" fitHeight="200.0" fitWidth="200.0" />
+            <VBox alignment="BOTTOM_CENTER" blendMode="SRC_ATOP" prefHeight="437.0" prefWidth="630.0">
+               <children>
+                  <Slider fx:id="progressbar" maxHeight="100.0">
+                     <VBox.margin>
+                        <Insets bottom="7.0" top="7.0" />
+                     </VBox.margin>
+                  </Slider>
+                  <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="592.0">
+                     <children>
+                        <Button fx:id="choosevid" mnemonicParsing="false" onAction="#chooseVid" text="CHOOSEVID">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="4.0" right="2.0" top="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="playbtn" mnemonicParsing="false" onAction="#play" text="PLAY">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="4.0" right="2.0" top="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="pausebtn" mnemonicParsing="false" onAction="#pause" text="PAUSE">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="4.0" right="2.0" top="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="seconds" mnemonicParsing="false" onAction="#add20s" text="+20S">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="4.0" right="2.0" top="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="secs" mnemonicParsing="false" onAction="#skip20s" text="-20S">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="4.0" right="2.0" top="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="stopbtn" mnemonicParsing="false" onAction="#stop" text="STOP" textFill="#171717">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="4.0" right="2.0" top="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Slider fx:id="volumeslider">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Slider>
+                     </children>
+                  </HBox>
+               </children>
+               <StackPane.margin>
+                  <Insets left="8.0" />
+               </StackPane.margin>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

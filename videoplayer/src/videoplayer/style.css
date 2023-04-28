@@ -1,0 +1,27 @@
+#stopbtn{
+    -fx-background-color: skyblue;
+}
+#pausebtn{
+    -fx-background-color: skyblue;
+}
+#choosevid{
+    -fx-background-color: skyblue;
+}
+#playbtn{
+    -fx-background-color: skyblue;
+}
+#seconds{
+    -fx-background-color: skyblue;
+}
+#secs{
+    -fx-background-color: skyblue;
+}
+#volumeslider{
+    -fx-background-color: blue;
+}
+#progressbar{
+    -fx-background-color: blue;
+}
+#borderpane{
+  -fx-background-color: gray;
+}
